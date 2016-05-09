@@ -38,7 +38,7 @@ Options for this middleware.
 #### key
 The key for data saved, defaults to `_elapsedtimes`.
 
-#### hanlder (err, req, res)
+#### handler (err, req, res)
 When a request done, this handler will called.
 
 All middleware elapsed time will save at `req._elapsedtimes` by default.
@@ -46,7 +46,7 @@ All middleware elapsed time will save at `req._elapsedtimes` by default.
 ````
 app.use(expressMiddlewareElapsedtime({
   key: 'yourCustomkey',
-  hanlder: function (err, req, res) {
+  handler: function (err, req, res) {
     console.log(req.yourCustomkey)
   }
 }))
