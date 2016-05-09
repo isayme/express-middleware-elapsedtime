@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm run standard && mocha",
-    "standard": "standard",
+    "test": "npm run lint && npm run coverage",
+    "lint": "standard",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "coverage": "istanbul cover _mocha --report lcovonly -- -R spec test/*.js && npm run coveralls"
   },
