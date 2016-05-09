@@ -22,9 +22,8 @@ var expressMiddlewareElapsedtime = require('express-middleware-elapsedtime')
 
 // it's truly recommend enable this middleware only in developing envrionment
 if (process.env.NODE_ENV !== 'production') {
-  app.use(expressMiddlewareElapsedtime()
+  app.use(expressMiddlewareElapsedtime())
 }
-
 ````
 
 # API
@@ -50,5 +49,5 @@ app.use(expressMiddlewareElapsedtime({
   hanlder: function (err, req, res) {
     console.log(req.yourCustomkey)
   }
-})
+}))
 ````

@@ -1,6 +1,6 @@
 {
   "name": "express-middleware-elapsedtime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "record express each middleware elapsed time",
   "main": "index.js",
   "directories": {
